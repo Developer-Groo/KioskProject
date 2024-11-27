@@ -14,7 +14,9 @@ public class Menu {
     }
 
     public void setMenuItems(MenuItem... menuItems) {
-        this.menuItems.addAll(Arrays.asList(menuItems));
+        for (MenuItem menuItem : menuItems) {
+            this.menuItems.add(menuItem);
+        }
     }
 
     public String getCategoryName() {
